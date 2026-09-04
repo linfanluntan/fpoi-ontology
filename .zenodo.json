@@ -1,0 +1,17 @@
+{
+  "title": "Failure Pattern Operational Intelligence (FPOI)",
+  "description": "Versioned ontology, SHACL constraints, SPARQL competency queries, validation artifacts, and reproducibility workflows for evidence-gated radiation-oncology failure-pattern analysis.",
+  "creators": [
+    {"name": "He, Renjie"}
+  ],
+  "license": "cc-by-4.0",
+  "keywords": ["radiation oncology", "ontology", "knowledge graph", "SHACL", "SPARQL"],
+  "upload_type": "software",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/linfanluntan/fpoi-ontology",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
