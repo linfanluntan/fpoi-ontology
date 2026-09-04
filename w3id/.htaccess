@@ -1,0 +1,6 @@
+RewriteEngine On
+
+RewriteRule ^$ https://linfanluntan.github.io/fpoi-ontology/ [R=302,L]
+RewriteRule ^1\.0\.1/?$ https://raw.githubusercontent.com/linfanluntan/fpoi-ontology/v1.0.1/ontology/fpoi_ontology_v1.0.1.ttl [R=302,L]
+RewriteRule ^ontology/?$ https://raw.githubusercontent.com/linfanluntan/fpoi-ontology/main/ontology/fpoi_ontology_v1.0.1.ttl [R=302,L]
+RewriteRule ^shapes/?$ https://raw.githubusercontent.com/linfanluntan/fpoi-ontology/main/shapes/fpoi_shapes_v1.0.1.ttl [R=302,L]
