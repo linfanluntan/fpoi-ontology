@@ -1,0 +1,68 @@
+@prefix fpoi: <https://w3id.org/fpoi/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+fpoi:eval1 a fpoi:ModelEvaluation ;
+    fpoi:comparesObservation fpoi:fp_P23b_FU1 ;
+    fpoi:comparesPrediction fpoi:pred1 ;
+    fpoi:verdict "DISAGREE" .
+
+fpoi:obs_P37_FU1 a fpoi:LongitudinalLesionObservation ;
+    fpoi:evaluatedAgainstDose fpoi:dose_P37 ;
+    fpoi:hasTargetCorrespondence fpoi:tca_P37 .
+
+fpoi:action1 a fpoi:ActionOrDecision ;
+    fpoi:decisionText "Multidisciplinary review" .
+
+fpoi:dose_P23b a fpoi:DoseDistribution .
+
+fpoi:dose_P37 a fpoi:DoseDistribution .
+
+fpoi:marginal a fpoi:PatternClassDefinition .
+
+fpoi:obs_P23b_FU1 a fpoi:LongitudinalLesionObservation ;
+    fpoi:interpretedAs fpoi:fp_P23b_FU1 .
+
+fpoi:outfield a fpoi:PatternClassDefinition .
+
+fpoi:pred1 a fpoi:PredictedFailurePattern .
+
+fpoi:run0 a fpoi:ComputationRun .
+
+fpoi:run1 a fpoi:ComputationRun ;
+    fpoi:pipelineVersion "1.0.0" ;
+    fpoi:supersedes fpoi:run0 .
+
+fpoi:scheme1 a fpoi:ClassificationScheme ;
+    fpoi:defines fpoi:infield,
+        fpoi:marginal,
+        fpoi:outfield ;
+    fpoi:versionIdentifier "dominant-fraction-v1" .
+
+fpoi:tc_P23b a fpoi:TreatmentCourse .
+
+fpoi:tc_P37 a fpoi:TreatmentCourse .
+
+fpoi:tca_P23b a fpoi:TreatmentTargetCorrespondenceAssessment ;
+    fpoi:assessedAgainstCourse fpoi:tc_P23b ;
+    fpoi:verdict "PASS" .
+
+fpoi:tca_P37 a fpoi:TreatmentTargetCorrespondenceAssessment ;
+    fpoi:assessedAgainstCourse fpoi:tc_P37 ;
+    fpoi:rxSource "clinical_dicom_linkage_conflict" ;
+    fpoi:verdict "FAIL" .
+
+fpoi:unc1 a fpoi:UncertaintyAssessment ;
+    fpoi:stabilityFraction 0.658 .
+
+fpoi:fp_P23b_FU1 a fpoi:FailurePattern ;
+    fpoi:assignedClass fpoi:infield ;
+    fpoi:classifiedUnder fpoi:scheme1 ;
+    fpoi:derivedFromObservation fpoi:obs_P23b_FU1 ;
+    fpoi:evaluatedAgainst fpoi:dose_P23b ;
+    fpoi:generatedBy fpoi:run1 ;
+    fpoi:hasUncertainty fpoi:unc1 ;
+    fpoi:respondedToBy fpoi:action1 ;
+    fpoi:supportedByTargetCorrespondence fpoi:tca_P23b .
+
+fpoi:infield a fpoi:PatternClassDefinition .
+

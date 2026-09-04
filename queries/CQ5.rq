@@ -1,0 +1,1 @@
+PREFIX fpoi:<https://w3id.org/fpoi/> SELECT ?evaluation ?verdict WHERE {?evaluation a fpoi:ModelEvaluation; fpoi:verdict ?verdict . FILTER(?verdict="DISAGREE")}

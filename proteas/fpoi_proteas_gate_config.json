@@ -1,0 +1,64 @@
+{
+  "rx_agreement_tol": 0.05,
+  "scale_interval": [
+    0.75,
+    1.25
+  ],
+  "scale_sensitivity_intervals": [
+    [
+      0.9,
+      1.1
+    ],
+    [
+      0.8,
+      1.2
+    ],
+    [
+      0.7,
+      1.3
+    ]
+  ],
+  "isodose_island_min_cc": 0.02,
+  "target_overlap_min": 0.5,
+  "target_centroid_max_mm": 10.0,
+  "baseline_dmean_min_frac": 0.9,
+  "course_margin_min": 1.5,
+  "nonfinite_policy": "flag",
+  "negative_clip": true,
+  "correspondence_pass_values": [
+    "PASS",
+    "GREEN",
+    "green_plausible"
+  ],
+  "correspondence_amber_values": [
+    "AMBER",
+    "amber_low_overlap",
+    "amber_centroid_shift"
+  ],
+  "correspondence_fail_values": [
+    "FAIL",
+    "RED",
+    "red_large_centroid_shift",
+    "red_geometry_mismatch"
+  ],
+  "scale_primary_metric": "Dmax/Dmax",
+  "g3_primary_metric": "Dmean/D_Rx",
+  "d95_role": "diagnostic_only",
+  "dmean_sensitivity_thresholds": [
+    0.8,
+    0.9,
+    1.0
+  ],
+  "temporal_order_min_days": 0,
+  "target_overlap_sensitivity": [
+    0.4,
+    0.5,
+    0.6
+  ],
+  "target_centroid_sensitivity_mm": [
+    5,
+    10,
+    15,
+    20
+  ]
+}

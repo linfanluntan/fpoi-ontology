@@ -1,0 +1,210 @@
+{
+  "release": "1.0.1-pre-submission",
+  "files": [
+    {
+      "path": ".github/workflows/pages.yml",
+      "sha256": "28503f80623167989faa7e7a5f9a67db95b10a191fbbdd4a0de9882fb2774eb9",
+      "bytes": 404
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "sha256": "5c4bb12be53e0ea38e4507cf697c2383927e8c44bb8fa4a98b4edcac74ff62ab",
+      "bytes": 426
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "928b53fd513844c91a91561534f3ea248644c250544f2ac2867effeb4979d502",
+      "bytes": 86
+    },
+    {
+      "path": ".zenodo.json",
+      "sha256": "f7e73d25a772522d1037c8ac57e4462c2cc5696d5c7a1f69437e9598a8859475",
+      "bytes": 493
+    },
+    {
+      "path": "CITATION.cff",
+      "sha256": "a099ef0706da6123b0468f5b7e60ace213824a74a4dbb2a9c2cb9949572ab9d8",
+      "bytes": 448
+    },
+    {
+      "path": "LICENSE.md",
+      "sha256": "bc14a6c36f8067b6497304e745d0dd810e47d0f8723036e349bbf5d4b00dcd89",
+      "bytes": 232
+    },
+    {
+      "path": "LICENSES/CC-BY-4.0.txt",
+      "sha256": "49bd081ca5abe69f258ecd4ec9583160625c21f3015e7e7ebe7f9a01fa33a8f0",
+      "bytes": 106
+    },
+    {
+      "path": "LICENSES/MIT.txt",
+      "sha256": "c30192dc3f6f1f2ea36cae0a0c9d6f13dd879ac6cbb657f5aa48b39a16b4b91d",
+      "bytes": 455
+    },
+    {
+      "path": "README.md",
+      "sha256": "3643215a1290964b39ce9ac4bf428941310608bf18463f70451348e39b4ef75d",
+      "bytes": 1535
+    },
+    {
+      "path": "dicom_rt/README.md",
+      "sha256": "782d07779b045157739f9a21e853229fd022e1c1da360502b1e025e209be8e5a",
+      "bytes": 367
+    },
+    {
+      "path": "dicom_rt/dicom_rt_ablation.py",
+      "sha256": "63f5a04efe58826fb83df228915fb35df3fab7206f9bfa9179558643b42de88f",
+      "bytes": 792
+    },
+    {
+      "path": "docs/index.html",
+      "sha256": "b53fc96cb9457d3080df607ed792c70c579fc745b6cd2b6fa182920f2a0b0c94",
+      "bytes": 357
+    },
+    {
+      "path": "ontology/fpoi_ontology_v1.0.1.ttl",
+      "sha256": "0ca3374b278ceaafd5c4525f060b578e82aeddbb08b6f51ddf8fefb791f9e32c",
+      "bytes": 5495
+    },
+    {
+      "path": "openkbp/Figure_OpenKBP_stability.png",
+      "sha256": "bcbd1eac8cbed51b939fba7e44a2d3bc9a4725f0ee363c09badf1fddaaee2e37",
+      "bytes": 220348
+    },
+    {
+      "path": "openkbp/README.md",
+      "sha256": "1116c63b228ec010c3ac3ee0b6301b6803bcd7389a1c028e29578b1aad588ebc",
+      "bytes": 498
+    },
+    {
+      "path": "proteas/README.md",
+      "sha256": "2f3df0dfa2f1db397f8a990d4326e47fbf91eeb2d4f222e86aa5f2d3e59c86ab",
+      "bytes": 364
+    },
+    {
+      "path": "proteas/fpoi_proteas_gate_config.json",
+      "sha256": "2ae7ecaf8611da2cfb546f5ac4410f95234b542009aa01220f0b7fc9dfc8be18",
+      "bytes": 1089
+    },
+    {
+      "path": "proteas/proteas_final_audit_results.zip",
+      "sha256": "408190ea6c0d5da576e96d7ce87abd6a4da2843aeb21da8a649b2a636f5ccaad",
+      "bytes": 229490
+    },
+    {
+      "path": "proteas/proteas_g0_g5_audit.py",
+      "sha256": "79672a02f16e0e65a86c421829868afd372ce210fbb770d004c67fc45ad09906",
+      "bytes": 40061
+    },
+    {
+      "path": "proteas/proteas_g0_g5_colab.ipynb",
+      "sha256": "354ebb4e9b8f70348e81e76e39a51cf51acee1694612c49d47a99e8527f014a7",
+      "bytes": 358904
+    },
+    {
+      "path": "queries/CQ1.rq",
+      "sha256": "401c0d937e070eb247c9965f557341d712192cf560940ca3b36b771d6dcc9c4b",
+      "bytes": 212
+    },
+    {
+      "path": "queries/CQ2.rq",
+      "sha256": "ab2556862d20a14c6c8a2eda604eb2ba8768a9562529370db417ab8adbcbf403",
+      "bytes": 112
+    },
+    {
+      "path": "queries/CQ3.rq",
+      "sha256": "bf8aad4725dd967349a91a36f7e090ce342ae2d6a5f13f8581b8b8c4ca45428d",
+      "bytes": 227
+    },
+    {
+      "path": "queries/CQ4.rq",
+      "sha256": "54b85e678cc7f8d8e17768afaf98142516258436b414ae60999da08c41444724",
+      "bytes": 182
+    },
+    {
+      "path": "queries/CQ5.rq",
+      "sha256": "a744e1b995b63ce22b9c721597f65b5ef49d32847857d65592480597a4397971",
+      "bytes": 160
+    },
+    {
+      "path": "queries/CQ6.rq",
+      "sha256": "6bf40c7bd9cf3d370d38b78df6d2c6e4be289b82d3d352b19cc70f8497bf0aee",
+      "bytes": 149
+    },
+    {
+      "path": "queries/CQ7.rq",
+      "sha256": "65bab2b075e203b1ccac645feb72184382172d3598b27d9d96cd59e2560f184b",
+      "bytes": 312
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "1b924ff99027d0a5309ee58f5d23a8e6b864eabaeb170efffbf4f27588b1c68c",
+      "bytes": 30
+    },
+    {
+      "path": "shapes/fpoi_shapes_v1.0.1.ttl",
+      "sha256": "b0c3215b375c741a2633b7a465625548a190f6a2f2377a46cee2d0a5543061bb",
+      "bytes": 2451
+    },
+    {
+      "path": "supplementary/FPOI_manuscript_working.docx",
+      "sha256": "3617b05a654f7a59c42c0e4be8f2bd0843570321c6f8a8c075cdacbd63eb5484",
+      "bytes": 2401035
+    },
+    {
+      "path": "validation/check_artifact_stats.py",
+      "sha256": "24edb5162901e190e6e63e5206acf1038a852f732d968d2bbd0387b2acc9fb38",
+      "bytes": 922
+    },
+    {
+      "path": "validation/competency_query_results.csv",
+      "sha256": "e6e1b84c5ca6a40a78e7e194aa7c8d5c0cfed2c45faddbccd0a32abe6103dbe9",
+      "bytes": 474
+    },
+    {
+      "path": "validation/fpoi_validation_graph_v1.0.ttl",
+      "sha256": "6d81d76eda383c0e77da663c536a65fa3bbb23f55de60cf97970a5d7a9adf1ed",
+      "bytes": 2027
+    },
+    {
+      "path": "validation/ontology_artifact_stats.json",
+      "sha256": "8645719f3b265f267cb5f317855fe1f698fcbd054b18be08ed3b228f4ad16615",
+      "bytes": 846
+    },
+    {
+      "path": "validation/run_competency_queries.py",
+      "sha256": "8aa74a8942630dcd55c9679884274e95fe0cf389e736f5a6cb320ae8329c2481",
+      "bytes": 672
+    },
+    {
+      "path": "validation/run_pyshacl_validation.py",
+      "sha256": "d1def39aba49f5ac7e9f87999eed8d3deecee5945ce28dd69509ffc893190f96",
+      "bytes": 2433
+    },
+    {
+      "path": "validation/shacl_negative_control_results.csv",
+      "sha256": "024070a4c1aec8c08fd975b7908525e7485b445af526bfbe1e187c05307589ac",
+      "bytes": 509
+    },
+    {
+      "path": "validation/shacl_validation_results.csv",
+      "sha256": "fc9806b66267ab6b65cd4b6397021447ebb7c9ed3b9c76868733140d36c78f7b",
+      "bytes": 232
+    },
+    {
+      "path": "validation/standards_mapping.csv",
+      "sha256": "caf2527d3e4238207a1fa1f8f74bcef46606373d906aa38572312acb5fccf977",
+      "bytes": 2305
+    },
+    {
+      "path": "w3id/.htaccess",
+      "sha256": "5c57411ff69122bf62096153237ea569d8b05771b1ce890933e08af9864e833c",
+      "bytes": 504
+    },
+    {
+      "path": "w3id/README.md",
+      "sha256": "c3b302844d2d7f47f6e1a7c28592f5d90df7e843dba787fbdfd6e5578b7aa6d4",
+      "bytes": 400
+    }
+  ]
+}

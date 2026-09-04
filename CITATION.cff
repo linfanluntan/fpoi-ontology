@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use FPOI, please cite the software release and the associated manuscript."
+title: "Failure Pattern Operational Intelligence (FPOI)"
+version: "1.0.1"
+date-released: "2026-09-04"
+authors:
+  - family-names: "He"
+    given-names: "Renjie"
+license: "CC-BY-4.0"
+repository-code: "https://github.com/__GITHUB_OWNER__/fpoi-ontology"
+keywords:
+  - radiation oncology
+  - ontology
+  - knowledge graph
+  - SHACL
+  - SPARQL

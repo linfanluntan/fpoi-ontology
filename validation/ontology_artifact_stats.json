@@ -1,0 +1,23 @@
+{
+  "version_iri": "https://w3id.org/fpoi/1.0.1",
+  "ontology_triples": 126,
+  "classes": 22,
+  "object_properties": 19,
+  "datatype_properties": 15,
+  "disjoint_class_axioms": 2,
+  "shacl_node_shapes": 2,
+  "shacl_property_shapes": 8,
+  "validation_graph_triples": 46,
+  "competency_queries": 7,
+  "negative_controls": 4,
+  "structural_consistency_screen": "PASS",
+  "consistency_notes": "RDFLib parse + explicit owl:disjointWith contradiction screen; not a full OWL DL reasoner.",
+  "release_patch": "1.0.1",
+  "shacl_engine": "pySHACL",
+  "shacl_engine_pinned_version": "0.40.1",
+  "positive_controls": 1,
+  "license": "CC BY 4.0",
+  "license_iri": "https://creativecommons.org/licenses/by/4.0/",
+  "shacl_validation": "positive control CONFORM; 4/4 malformed controls REJECT",
+  "reproducibility_environment": "pySHACL 0.40.1; RDFLib 7.6.0"
+}

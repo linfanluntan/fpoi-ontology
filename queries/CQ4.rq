@@ -1,0 +1,1 @@
+PREFIX fpoi:<https://w3id.org/fpoi/> SELECT ?fp ?stability WHERE {?fp a fpoi:FailurePattern; fpoi:hasUncertainty ?u . ?u fpoi:stabilityFraction ?stability . FILTER(?stability < 0.8)}

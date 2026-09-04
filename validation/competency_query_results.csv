@@ -1,0 +1,8 @@
+query,rows,values
+CQ1,1,https://w3id.org/fpoi/fp_P23b_FU1 | https://w3id.org/fpoi/infield
+CQ2,1,https://w3id.org/fpoi/run1 | https://w3id.org/fpoi/run0
+CQ3,1,https://w3id.org/fpoi/obs_P37_FU1 | FAIL | clinical_dicom_linkage_conflict
+CQ4,1,https://w3id.org/fpoi/fp_P23b_FU1 | 0.658
+CQ5,1,https://w3id.org/fpoi/eval1 | DISAGREE
+CQ6,1,https://w3id.org/fpoi/fp_P23b_FU1 | Multidisciplinary review
+CQ7,1,https://w3id.org/fpoi/obs_P37_FU1 | FAIL | clinical_dicom_linkage_conflict

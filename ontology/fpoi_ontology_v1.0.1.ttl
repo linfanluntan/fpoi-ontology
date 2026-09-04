@@ -1,0 +1,189 @@
+@prefix fpoi: <https://w3id.org/fpoi/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+fpoi:AnatomicalStructure a owl:Class ;
+    rdfs:label "AnatomicalStructure" .
+
+fpoi:LesionCorrespondenceAssessment a owl:Class ;
+    rdfs:label "LesionCorrespondenceAssessment" .
+
+fpoi:Ontology a owl:Ontology ;
+    rdfs:label "Failure Pattern Operational Intelligence (FPOI) ontology" ;
+    owl:versionIRI fpoi:1.0.1 ;
+    owl:versionInfo "1.0.1" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> .
+
+fpoi:Patient a owl:Class ;
+    rdfs:label "Patient" .
+
+fpoi:ProtocolVersion a owl:Class ;
+    rdfs:label "ProtocolVersion" .
+
+fpoi:StructureSet a owl:Class ;
+    rdfs:label "StructureSet" .
+
+fpoi:TumorEpisode a owl:Class ;
+    rdfs:label "TumorEpisode" .
+
+fpoi:assessedAgainstCourse a owl:ObjectProperty ;
+    rdfs:domain fpoi:TreatmentTargetCorrespondenceAssessment ;
+    rdfs:range fpoi:TreatmentCourse .
+
+fpoi:assignedClass a owl:ObjectProperty ;
+    rdfs:domain fpoi:FailurePattern ;
+    rdfs:range fpoi:PatternClassDefinition .
+
+fpoi:centroidDistanceMm a owl:DatatypeProperty .
+
+fpoi:classifiedUnder a owl:ObjectProperty ;
+    rdfs:domain fpoi:FailurePattern ;
+    rdfs:range fpoi:ClassificationScheme .
+
+fpoi:comparesObservation a owl:ObjectProperty ;
+    rdfs:domain fpoi:ModelEvaluation ;
+    rdfs:range fpoi:FailurePattern .
+
+fpoi:comparesPrediction a owl:ObjectProperty ;
+    rdfs:domain fpoi:ModelEvaluation ;
+    rdfs:range fpoi:PredictedFailurePattern .
+
+fpoi:createdOn a owl:DatatypeProperty .
+
+fpoi:decisionText a owl:DatatypeProperty .
+
+fpoi:defines a owl:ObjectProperty ;
+    rdfs:domain fpoi:ClassificationScheme ;
+    rdfs:range fpoi:PatternClassDefinition .
+
+fpoi:doseMaxGy a owl:DatatypeProperty .
+
+fpoi:doseMeanGy a owl:DatatypeProperty .
+
+fpoi:evaluatedAgainst a owl:ObjectProperty ;
+    rdfs:domain fpoi:FailurePattern ;
+    rdfs:range fpoi:DoseDistribution .
+
+fpoi:fHigh a owl:DatatypeProperty .
+
+fpoi:fLow a owl:DatatypeProperty .
+
+fpoi:fMid a owl:DatatypeProperty .
+
+fpoi:generatedBy a owl:ObjectProperty ;
+    rdfs:domain fpoi:FailurePattern ;
+    rdfs:range fpoi:ComputationRun .
+
+fpoi:generates a owl:ObjectProperty ;
+    rdfs:domain fpoi:RiskModelRun ;
+    rdfs:range fpoi:PredictedFailurePattern .
+
+fpoi:hasTargetCorrespondence a owl:ObjectProperty ;
+    rdfs:domain fpoi:LongitudinalLesionObservation ;
+    rdfs:range fpoi:TreatmentTargetCorrespondenceAssessment .
+
+fpoi:hasUncertainty a owl:ObjectProperty ;
+    rdfs:domain fpoi:FailurePattern ;
+    rdfs:range fpoi:UncertaintyAssessment .
+
+fpoi:interpretedAs a owl:ObjectProperty ;
+    rdfs:domain fpoi:LongitudinalLesionObservation ;
+    rdfs:range fpoi:FailurePattern .
+
+fpoi:maySupport a owl:ObjectProperty ;
+    rdfs:domain fpoi:LongitudinalLesionObservation ;
+    rdfs:range fpoi:RecurrenceEvent .
+
+fpoi:overlapFraction a owl:DatatypeProperty .
+
+fpoi:pipelineVersion a owl:DatatypeProperty .
+
+fpoi:resolvesPrescription a owl:ObjectProperty ;
+    rdfs:domain fpoi:TreatmentTargetCorrespondenceAssessment ;
+    rdfs:range fpoi:TreatmentCourse .
+
+fpoi:respondedToBy a owl:ObjectProperty ;
+    rdfs:domain fpoi:FailurePattern ;
+    rdfs:range fpoi:ActionOrDecision .
+
+fpoi:rxSource a owl:DatatypeProperty .
+
+fpoi:stabilityFraction a owl:DatatypeProperty .
+
+fpoi:supersedes a owl:ObjectProperty ;
+    rdfs:domain fpoi:ComputationRun ;
+    rdfs:range fpoi:ComputationRun .
+
+fpoi:supportedBy a owl:ObjectProperty ;
+    rdfs:domain fpoi:FailurePattern ;
+    rdfs:range fpoi:RegistrationAssessment .
+
+fpoi:supportsObservation a owl:ObjectProperty ;
+    rdfs:domain fpoi:ImagingStudy ;
+    rdfs:range fpoi:LongitudinalLesionObservation .
+
+fpoi:unresolvedReason a owl:DatatypeProperty .
+
+fpoi:uses a owl:ObjectProperty ;
+    rdfs:domain fpoi:TreatmentCourse ;
+    rdfs:range fpoi:DoseDistribution .
+
+fpoi:verdict a owl:DatatypeProperty .
+
+fpoi:versionIdentifier a owl:DatatypeProperty .
+
+fpoi:ActionOrDecision a owl:Class ;
+    rdfs:label "ActionOrDecision" .
+
+fpoi:ImagingStudy a owl:Class ;
+    rdfs:label "ImagingStudy" .
+
+fpoi:RecurrenceEvent a owl:Class ;
+    rdfs:label "RecurrenceEvent" .
+
+fpoi:RegistrationAssessment a owl:Class ;
+    rdfs:label "RegistrationAssessment" .
+
+fpoi:RiskModelRun a owl:Class ;
+    rdfs:label "RiskModelRun" .
+
+fpoi:UncertaintyAssessment a owl:Class ;
+    rdfs:label "UncertaintyAssessment" .
+
+fpoi:ClassificationScheme a owl:Class ;
+    rdfs:label "ClassificationScheme" .
+
+fpoi:DoseDistribution a owl:Class ;
+    rdfs:label "DoseDistribution" ;
+    rdfs:subClassOf prov:Entity .
+
+fpoi:ModelEvaluation a owl:Class ;
+    rdfs:label "ModelEvaluation" .
+
+fpoi:PatternClassDefinition a owl:Class ;
+    rdfs:label "PatternClassDefinition" .
+
+fpoi:PredictedFailurePattern a owl:Class ;
+    rdfs:label "PredictedFailurePattern" ;
+    owl:disjointWith fpoi:FailurePattern .
+
+fpoi:ComputationRun a owl:Class ;
+    rdfs:label "ComputationRun" ;
+    rdfs:subClassOf prov:Activity .
+
+fpoi:TreatmentCourse a owl:Class ;
+    rdfs:label "TreatmentCourse" .
+
+fpoi:TreatmentTargetCorrespondenceAssessment a owl:Class ;
+    rdfs:label "TreatmentTargetCorrespondenceAssessment" .
+
+fpoi:LongitudinalLesionObservation a owl:Class ;
+    rdfs:label "LongitudinalLesionObservation" ;
+    rdfs:subClassOf prov:Entity .
+
+fpoi:FailurePattern a owl:Class ;
+    rdfs:label "FailurePattern" ;
+    owl:disjointWith fpoi:LongitudinalLesionObservation .
+

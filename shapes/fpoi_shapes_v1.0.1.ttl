@@ -1,0 +1,60 @@
+@prefix fpoi: <https://w3id.org/fpoi/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+fpoi:FailurePatternShape a sh:NodeShape ;
+    sh:targetClass fpoi:FailurePattern ;
+    sh:property <https://w3id.org/fpoi/FailurePatternShape/assignedClass>,
+        <https://w3id.org/fpoi/FailurePatternShape/classifiedUnder>,
+        <https://w3id.org/fpoi/FailurePatternShape/derivedFromObservation>,
+        <https://w3id.org/fpoi/FailurePatternShape/evaluatedAgainst>,
+        <https://w3id.org/fpoi/FailurePatternShape/generatedBy>,
+        <https://w3id.org/fpoi/FailurePatternShape/supportedByTargetCorrespondence> .
+
+fpoi:TreatmentTargetCorrespondenceAssessmentShape a sh:NodeShape ;
+    sh:targetClass fpoi:TreatmentTargetCorrespondenceAssessment ;
+    sh:property <https://w3id.org/fpoi/TreatmentTargetCorrespondenceAssessmentShape/assessedAgainstCourse> .
+
+<https://w3id.org/fpoi/FailurePatternShape/assignedClass>
+    sh:path fpoi:assignedClass ;
+    sh:minCount 1 ;
+    sh:class fpoi:PatternClassDefinition .
+
+<https://w3id.org/fpoi/FailurePatternShape/classifiedUnder>
+    sh:path fpoi:classifiedUnder ;
+    sh:minCount 1 ;
+    sh:class fpoi:ClassificationScheme .
+
+<https://w3id.org/fpoi/FailurePatternShape/derivedFromObservation>
+    sh:path fpoi:derivedFromObservation ;
+    sh:minCount 1 ;
+    sh:class fpoi:LongitudinalLesionObservation .
+
+<https://w3id.org/fpoi/FailurePatternShape/evaluatedAgainst>
+    sh:path fpoi:evaluatedAgainst ;
+    sh:minCount 1 ;
+    sh:class fpoi:DoseDistribution .
+
+<https://w3id.org/fpoi/FailurePatternShape/generatedBy>
+    sh:path fpoi:generatedBy ;
+    sh:minCount 1 ;
+    sh:class fpoi:ComputationRun .
+
+<https://w3id.org/fpoi/FailurePatternShape/supportedByTargetCorrespondence>
+    sh:path fpoi:supportedByTargetCorrespondence ;
+    sh:minCount 1 ;
+    sh:class fpoi:TreatmentTargetCorrespondenceAssessment ;
+    sh:qualifiedValueShape [
+        sh:class fpoi:TreatmentTargetCorrespondenceAssessment ;
+        sh:property [
+            sh:path fpoi:verdict ;
+            sh:hasValue "PASS"
+        ]
+    ] ;
+    sh:qualifiedMinCount 1 ;
+    sh:message "A normalized FailurePattern requires at least one supporting target-correspondence assessment with verdict PASS." .
+
+<https://w3id.org/fpoi/TreatmentTargetCorrespondenceAssessmentShape/assessedAgainstCourse>
+    sh:path fpoi:assessedAgainstCourse ;
+    sh:minCount 1 ;
+    sh:class fpoi:TreatmentCourse .

@@ -1,0 +1,6 @@
+test,expected,observed,interpretation
+positive_unmodified,CONFORM,CONFORM,corrected shape permits FAIL assessments that do not support a FailurePattern
+missing_target_correspondence,REJECT,REJECT,FailurePattern lacks required supporting assessment
+nonpassing_target_correspondence,REJECT,REJECT,supporting assessment does not satisfy qualified PASS verdict
+missing_classification_scheme,REJECT,REJECT,FailurePattern lacks classifiedUnder
+missing_computation_run,REJECT,REJECT,FailurePattern lacks generatedBy

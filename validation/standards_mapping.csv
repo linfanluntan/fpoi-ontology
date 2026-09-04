@@ -1,0 +1,15 @@
+FPOI concept,External standard/resource,External semantic role,Mapping relation,Implementation note
+Patient,O3 / ROO,Clinical patient identity/demographic context,broad semantic alignment,FPOI keeps patient identity minimal/pseudonymized; no owl:equivalentClass asserted.
+TumorEpisode,O3 / ROO,"Disease episode, diagnosis, site",broad semantic alignment,Maps to oncology disease/episode concepts; exact external URI deferred to implementation profile.
+TreatmentCourse,O3 / ROO,Radiotherapy treatment/course,broad semantic alignment,Reuses treatment-course semantics; FPOI adds evidence-gating role.
+DoseDistribution,ROO / DICOM-RT / TG-263,Radiotherapy dose representation,broad semantic alignment,TG-263 informs naming semantics; FPOI additionally stores source/hash/Rx context.
+StructureSet / AnatomicalStructure,TG-263 / ROO / O3,Named treatment-planning structures/anatomy,nomenclature alignment,"TG-263 is used for standardized structure/dosimetric naming, not as a complete ontology mapping."
+ImagingStudy,O3 / FHIR ImagingStudy,Imaging acquisition/study context,broad semantic alignment,FPOI specializes baseline/follow-up purpose.
+LongitudinalLesionObservation,O3 + PROV-O,Observed lesion state at a time point,FPOI specialization,No direct equivalent claimed; modeled as provenance-bearing observation.
+FailurePattern,FPOI-specific,Versioned analytical interpretation,new application concept,No equivalent asserted in ROO/O3/TG-263.
+ClassificationScheme,SKOS / PROV-O,Versioned rule system,design alignment,Named rule provenance; not a clinical terminology class.
+ComputationRun,PROV-O Activity,Computation/provenance activity,rdfs:subClassOf,Explicitly aligned in ontology artifact.
+TreatmentTargetCorrespondenceAssessment,FPOI-specific,Lesion↔target↔course evidence state,new application concept,Introduced because public-data audit exposed record-linkage ambiguity.
+RegistrationAssessment,TG-132 context / PROV-O,Registration QA evidence,design alignment,Represents QA evidence; no equivalence asserted.
+LesionCorrespondenceAssessment,FPOI-specific,Longitudinal same-lesion evidence,new application concept,Distinct from treatment-target identity.
+UncertaintyAssessment,PROV-O context,Perturbation/sensitivity evidence,design alignment,Stores uncertainty results linked to interpretation.

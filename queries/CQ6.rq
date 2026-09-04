@@ -1,0 +1,1 @@
+PREFIX fpoi:<https://w3id.org/fpoi/> SELECT ?fp ?decision WHERE {?fp a fpoi:FailurePattern; fpoi:respondedToBy ?a . ?a fpoi:decisionText ?decision .}

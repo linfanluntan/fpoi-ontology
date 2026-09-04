@@ -1,0 +1,6 @@
+test,expected,observed
+positive_unmodified,CONFORM,CONFORM
+missing_target_correspondence,REJECT,REJECT
+nonpassing_target_correspondence,REJECT,REJECT
+missing_classification_scheme,REJECT,REJECT
+missing_computation_run,REJECT,REJECT

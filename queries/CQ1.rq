@@ -1,0 +1,1 @@
+PREFIX fpoi:<https://w3id.org/fpoi/> SELECT ?fp ?class WHERE {?fp a fpoi:FailurePattern; fpoi:classifiedUnder fpoi:scheme1; fpoi:assignedClass ?class . fpoi:scheme1 fpoi:versionIdentifier "dominant-fraction-v1".}
