@@ -7,7 +7,7 @@ authors:
   - family-names: "He"
     given-names: "Renjie"
 license: "CC-BY-4.0"
-repository-code: "https://github.com/__GITHUB_OWNER__/fpoi-ontology"
+repository-code: "https://github.com/linfanluntan/fpoi-ontology"
 keywords:
   - radiation oncology
   - ontology
