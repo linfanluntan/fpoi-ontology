@@ -6,7 +6,7 @@ FPOI is a versioned application ontology and operational knowledge-graph framewo
 
 This is the public development repository for FPOI: `https://github.com/linfanluntan/fpoi-ontology`.
 
-The ontology/semantic release is v1.0.1. The manuscript submission release remains **pre-submission** until the repository/identifier release gates below are closed.
+The ontology/semantic release is v1.0.1. The manuscript submission release remains **pre-submission** only until the persistent-release identifiers below are closed.
 
 ## Verified ontology evaluation
 
@@ -18,6 +18,7 @@ The corrected SHACL semantics intentionally permit a non-passing `TreatmentTarge
 
 - **C4 completed:** published-rule comparison on the 60 controlled OpenKBP Experiment-A lesions. Ferreira-TV and Mohamed A–E were executed with native semantics; Li et al. is explicitly documented as not faithfully executable from OpenKBP because the required GTV/CTV1/CTV2 hierarchy is absent.
 - **C8 completed:** four object-class ablations (CT, RTSTRUCT, RTPLAN, RTDOSE) were applied to each of four intact DICOM-RT packages, producing 16/16 rejected negative controls. One fifth package is a natural incomplete control.
+- **C9 closed:** the release-preparation changes, including the authoritative PROTEAS gate configuration, C4, and C8 artifacts, are merged to `main`. Release-provenance commit: `a48dce057a2e48fa57075a517f99bff092f6250e`.
 
 ## Quick validation
 
@@ -30,7 +31,6 @@ python validation/run_pyshacl_validation.py
 
 ## Remaining pre-submission release gates
 
-- C9: merge this release-preparation change set to `main` and cite the resulting repository commit SHA in manuscript/release provenance.
 - Archive a tagged release in Zenodo and add the DOI to `CITATION.cff` and the manuscript.
 - Register `https://w3id.org/fpoi/` and verify dereferenceability before claiming the persistent namespace is active.
 
