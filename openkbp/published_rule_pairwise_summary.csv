@@ -1,0 +1,9 @@
+seed_type,comparison,disagreements,n,disagreement_fraction,ci95_low,ci95_high
+gradient-seeded,dominant_fraction_v1 vs Ferreira-TV,19,20,0.95,0.7512672371404038,0.9987349105289341
+gradient-seeded,strict_overlap_v1 vs Ferreira-TV,19,20,0.95,0.7512672371404038,0.9987349105289341
+high-dose-seeded,dominant_fraction_v1 vs Ferreira-TV,19,20,0.95,0.7512672371404038,0.9987349105289341
+high-dose-seeded,strict_overlap_v1 vs Ferreira-TV,0,20,0.0,0.0,0.1684334709830853
+low-dose-seeded,dominant_fraction_v1 vs Ferreira-TV,18,20,0.9,0.6830172859809176,0.9876514728297052
+low-dose-seeded,strict_overlap_v1 vs Ferreira-TV,20,20,1.0,0.8315665290169146,1.0
+ALL,dominant_fraction_v1 vs Ferreira-TV,56,60,0.9333333333333333,0.8380131740352646,0.9815377428347733
+ALL,strict_overlap_v1 vs Ferreira-TV,39,60,0.65,0.515971876984831,0.7686740457466186
