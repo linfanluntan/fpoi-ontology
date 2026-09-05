@@ -2,11 +2,13 @@
 
 FPOI is a versioned application ontology and operational knowledge-graph framework for representing radiation-oncology failure-pattern evidence, provenance, QA state, uncertainty, and governed interpretation.
 
-## Repository
+## Repository and archive
 
-This is the public development repository for FPOI: `https://github.com/linfanluntan/fpoi-ontology`.
+Public repository: `https://github.com/linfanluntan/fpoi-ontology`
 
-The ontology/semantic release is v1.0.1. The manuscript submission release remains **pre-submission** only until the persistent-release identifiers below are closed.
+Zenodo archive DOI: `10.5281/zenodo.22328034`
+
+The ontology/semantic release is v1.0.1. The remaining persistent-identifier task is W3ID registration and dereferenceability verification.
 
 ## Verified ontology evaluation
 
@@ -29,10 +31,9 @@ python validation/run_competency_queries.py
 python validation/run_pyshacl_validation.py
 ```
 
-## Remaining pre-submission release gates
+## Persistent namespace
 
-- Archive a tagged release in Zenodo and add the DOI to `CITATION.cff` and the manuscript.
-- Register `https://w3id.org/fpoi/` and verify dereferenceability before claiming the persistent namespace is active.
+The intended namespace is `https://w3id.org/fpoi/`. Registration is pending; do not describe the namespace as dereferenceable until the W3ID pull request is merged and the redirects are verified.
 
 ## Data
 
