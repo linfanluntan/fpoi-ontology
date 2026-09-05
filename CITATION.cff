@@ -8,6 +8,11 @@ authors:
     given-names: "Renjie"
 license: "CC-BY-4.0"
 repository-code: "https://github.com/linfanluntan/fpoi-ontology"
+doi: "10.5281/zenodo.22328034"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22328034"
+    description: "Zenodo software archive"
 keywords:
   - radiation oncology
   - ontology
