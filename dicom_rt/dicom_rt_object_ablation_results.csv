@@ -1,0 +1,22 @@
+center,variant,n_CT,n_RTSTRUCT,n_RTPLAN,n_RTDOSE,has_CT,has_RTSTRUCT,has_RTPLAN,has_RTDOSE,required_object_set_complete,expected_semantic_package_complete
+Center 1,intact,275,0,0,1,True,False,False,True,False,FAIL
+Center 2,intact,236,1,1,1,True,True,True,True,True,PASS
+Center 2,minus_CT,0,1,1,1,False,True,True,True,False,FAIL
+Center 2,minus_RTSTRUCT,236,0,1,1,True,False,True,True,False,FAIL
+Center 2,minus_RTPLAN,236,1,0,1,True,True,False,True,False,FAIL
+Center 2,minus_RTDOSE,236,1,1,0,True,True,True,False,False,FAIL
+Center 3,intact,224,1,1,1,True,True,True,True,True,PASS
+Center 3,minus_CT,0,1,1,1,False,True,True,True,False,FAIL
+Center 3,minus_RTSTRUCT,224,0,1,1,True,False,True,True,False,FAIL
+Center 3,minus_RTPLAN,224,1,0,1,True,True,False,True,False,FAIL
+Center 3,minus_RTDOSE,224,1,1,0,True,True,True,False,False,FAIL
+Center 4,intact,229,1,1,1,True,True,True,True,True,PASS
+Center 4,minus_CT,0,1,1,1,False,True,True,True,False,FAIL
+Center 4,minus_RTSTRUCT,229,0,1,1,True,False,True,True,False,FAIL
+Center 4,minus_RTPLAN,229,1,0,1,True,True,False,True,False,FAIL
+Center 4,minus_RTDOSE,229,1,1,0,True,True,True,False,False,FAIL
+Center 5,intact,270,1,1,1,True,True,True,True,True,PASS
+Center 5,minus_CT,0,1,1,1,False,True,True,True,False,FAIL
+Center 5,minus_RTSTRUCT,270,0,1,1,True,False,True,True,False,FAIL
+Center 5,minus_RTPLAN,270,1,0,1,True,True,False,True,False,FAIL
+Center 5,minus_RTDOSE,270,1,1,0,True,True,True,False,False,FAIL
